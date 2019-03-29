@@ -85,7 +85,7 @@ export default class AvRadio extends Component {
           id={id || `radio-${groupProps.name}-${this.props.value}`}
           className={classes}
           onChange={this.onChangeHandler}
-          checked={this.props.value === groupProps.value}
+          checked={this.props.checked}
           value={this.props.value && this.props.value.toString()}
           required={groupProps.required}
         />
